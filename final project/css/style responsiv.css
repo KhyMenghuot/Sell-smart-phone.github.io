@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Koulen&family=Noto+Sans+Khmer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Noto+Sans+Khmer&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg::before {
+    width: 100%;
+    content: '';
+    float: left;
+}
+
+.menu-width {
+    background-color: rgb(225, 0, 85);
+}
+
+.menu-width .menu-box {
+    padding: 10px;
+}
+
+.menu-width .menu-box ul li {
+    float: left;
+}
+
+.header {
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    background-color: rgb(205, 211, 26);
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.menu-width .menu-box ul li a {
+    color: white;
+    float: left;
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'koulen', serif;
+    transition: 0.5s;
+}
+
+.menu-width .menu-box ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-bar {
+    display: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    background-color: rgb(225, 0, 85);
+}
+
+.menu-bar .menu-style li a {
+    text-decoration: none;
+    color: white;
+}
+
+.title-bar {
+    padding: 20px;
+}
+
+.title-bar .text-bar {
+    text-align: center;
+    font-family: 'koulen', cursive;
+    font-size: 55px;
+    user-select: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(16, 13, 13);
+}
+
+.box-footer .box {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.logo-box img {
+    width: 60px;
+    height: 65px;
+    border-radius: 40px;
+}
+
+li p {
+    color: white;
+}
+
+
+/* [xl] Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .title-bar .text-bar {
+        color: red;
+    }
+}
+
+
+/* [lg] large devices (desktops, 992px and up) 
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* [md] Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 50px;
+        color: blue;
+    }
+    .box-width .item-box .des-box .txt-des {
+        font-size: 16px;
+    }
+}
+
+
+/* [sm] Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 40px;
+    }
+    .box-width .item-box .des-box .txt-des {
+        font-size: 14px;
+    }
+}
+
+
+/* [col] Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 30px;
+        color: red;
+    }
+}
